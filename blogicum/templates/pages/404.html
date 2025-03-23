@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Что-то не нашлось{% endblock %}
+{% block content %}
+  <h1>Упс... проблема😢</h1>
+  <p>Страницы с адресом {{ request.build_absolute_uri }} не существует!</p>
+  <a href="{% url 'blog:index' %}">Вернуться на главную</a>
+{% endblock %}
